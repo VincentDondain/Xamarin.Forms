@@ -304,7 +304,6 @@ namespace Xamarin.Forms.Build.Tasks
 			{
 				var acceptEmptyServiceProvider = context.Variables[node].VariableType.GetCustomAttribute(module.ImportReference(typeof(AcceptEmptyServiceProviderAttribute))) != null;
 				var markExt = module.ImportReference(typeof (IMarkupExtension)).Resolve();
->>>>>>> [XamlC] AcceptEmptyServiceProvider
 				var provideValueInfo = markExt.Methods.First(md => md.Name == "ProvideValue");
 				var provideValue = module.ImportReference(provideValueInfo);
 
